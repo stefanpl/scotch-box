@@ -14,4 +14,5 @@ fi
 
 sudo apt-get update
 sudo apt-get install -y php5-dev
-
+sudo pecl install xdebug
+echo 'zend_extension="/usr/lib/php5/20131226/xdebug.so"' | sudo tee -a /etc/php5/apache2/php.ini
